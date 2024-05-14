@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "a1257074-77cb-4b40-a76e-f346ea8eca2e",
+		"name": "Rust-Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21099264",
+		"_collection_link": "https://warped-sunset-527462.postman.co/workspace/New-Team-Workspace~dc9166b2-2433-4dee-a58a-944112045fc7/collection/21099264-a1257074-77cb-4b40-a76e-f346ea8eca2e?action=share&source=collection_link&creator=21099264"
+	},
+	"item": [
+		{
+			"name": "Get /books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Neues Buch hinzufügen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Mathe für Dummies\",\r\n    \"author\" : \"Daniel Jung\",\r\n    \"year\" : 2009\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
